@@ -1,0 +1,48 @@
+context: podcasts
+name: Podcasts
+intro: >-
+  The common podcast vocabulary -- the shows people subscribe to and the episodes they publish --
+  distilled from the APIs that already exist. Music has its own context.
+tags: [Podcasts, Podcasting, Podcast Hosting, Podcast, Audio, Spoken Word]
+
+envelope: [_links, _pagination, _results, data, success, errors, warnings, count, total, page, meta, links,
+           value, results, next, previous, has_more, message, status_code, ids, next_page, previous_page,
+           page_info, cursor, total_count, per_page, total_pages, current_page, object, url, feeds, items]
+
+common_fields:
+  id: [uuid, guid, object_id, record_id, external_id, podcast_guid]
+  name: [title, display_name, label]
+  description: [summary, notes, show_notes, content]
+  created_at: [created, created_date, date_created, created_on]
+  updated_at: [updated, last_updated, modified_at, updated_on, last_update_time]
+  image_url: [image, artwork, artwork_url, cover_image, thumbnail, cover_art_url]
+  language: [lang, locale]
+
+concepts:
+  show:
+    path: /shows
+    segments: [podcasts, podcast, shows, show, feeds@podcasts|podcast|search, channels@podcasts]
+    aliases:
+      feed_url: [rss, rss_url, feed, url, feedUrl]
+      author: [publisher, owner, owner_name, creator, host]
+      categories: [category, genres, genre, tags]
+      episode_count: [episodes_count, total_episodes, episodeCount]
+      explicit: [is_explicit]
+  episode:
+    requires: [show]
+    segments: [episodes, episode]
+    aliases:
+      audio_url: [enclosure_url, enclosure, media_url, audio, file_url, url]
+      duration: [duration_seconds, length, audio_length_sec, duration_ms]
+      published_at: [publish_date, pub_date, date_published, released_at, datePublished]
+      show_id: [podcast_id, podcast, show, feed_id, feedId]
+      season: [season_number]
+      episode_number: [number, episode]
+
+findings:
+  - "An episode agrees on title, description, duration, the audio URL and the show it belongs to --
+    the RSS enclosure model every podcast API inherits, because every podcast is an RSS feed first."
+  - "A show agrees on title, description and author."
+decisions:
+  - "Podcasts, shows and podcast feeds are one concept, published as `/shows`."
+  - "Audio streaming of music is music's."

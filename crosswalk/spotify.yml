@@ -1,0 +1,37 @@
+provider: spotify
+apis_io: https://apis.io/providers/spotify/
+context: podcasts
+generated: '2026-11-11'
+concepts:
+  show:
+    path_segment:
+    - shows
+    properties:
+      id: id
+      name: name
+      description: description
+      author: publisher
+      type: type
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/spotify-openapi-original.yml#DELETE /me/shows
+    - openapi/_original/spotify-openapi-original.yml#GET /me/shows
+    - openapi/_original/spotify-openapi-original.yml#GET /shows
+    - openapi/_original/spotify-openapi-original.yml#GET /shows/{id}
+    - openapi/_original/spotify-openapi-original.yml#PUT /me/shows
+  episode:
+    path_segment:
+    - episodes
+    properties:
+      id: id
+      description: description
+      name: name
+      duration: duration_ms
+      type: type
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/spotify-openapi-original.yml#DELETE /me/episodes
+    - openapi/_original/spotify-openapi-original.yml#GET /episodes
+    - openapi/_original/spotify-openapi-original.yml#GET /episodes/{id}
+    - openapi/_original/spotify-openapi-original.yml#GET /me/episodes
+    - openapi/_original/spotify-openapi-original.yml#GET /shows/{id}/episodes

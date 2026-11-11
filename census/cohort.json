@@ -1,0 +1,600 @@
+[
+ {
+  "slug": "acast",
+  "specs": [
+   "openapi/_original/acast-openapi.yml"
+  ]
+ },
+ {
+  "slug": "acrcloud",
+  "specs": [
+   "openapi/_original/acrcloud-openapi.yml"
+  ]
+ },
+ {
+  "slug": "apple-music",
+  "specs": [
+   "openapi/_original/apple-music-openapi.yml"
+  ]
+ },
+ {
+  "slug": "artlist",
+  "specs": [
+   "openapi/_original/artlist-download-openapi-original.yml",
+   "openapi/_original/artlist-search-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "assemblyai",
+  "specs": [
+   "openapi/_original/assemblyai-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "audd",
+  "specs": [
+   "openapi/_original/audd-openapi.json"
+  ]
+ },
+ {
+  "slug": "audiomack",
+  "specs": [
+   "openapi/_original/audiomack-data-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "audius",
+  "specs": [
+   "openapi/_original/audius-openapi.yml"
+  ]
+ },
+ {
+  "slug": "auphonic",
+  "specs": [
+   "openapi/_original/auphonic-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "autocontent-api",
+  "specs": [
+   "openapi/_original/autocontent-api-legacy-content-openapi.json",
+   "openapi/_original/autocontent-api-platform-v1-openapi.json"
+  ]
+ },
+ {
+  "slug": "bandcamp",
+  "specs": [
+   "openapi/_original/bandcamp-openapi.yml"
+  ]
+ },
+ {
+  "slug": "beatoven",
+  "specs": [
+   "openapi/_original/beatoven-composition-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "blubrry-api-restful-api-for-podcast-publishing-statistics",
+  "specs": [
+   "openapi/_original/blubrry-api-restful-api-for-podcast-publishing-statistics-openapi.yml",
+   "openapi/_original/blubrry-api-restful-api-for-podcast-publishing-statistics-podcaster-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "brandtrack",
+  "specs": [
+   "openapi/_original/brandtrack-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "buzzsprout",
+  "specs": [
+   "openapi/_original/buzzsprout-openapi.yml"
+  ]
+ },
+ {
+  "slug": "captivate-fm",
+  "specs": [
+   "openapi/_original/captivate-fm-openapi.yml"
+  ]
+ },
+ {
+  "slug": "coconut",
+  "specs": [
+   "openapi/_original/coconut-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cometapi",
+  "specs": [
+   "openapi/_original/cometapi-unified-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "convertapi",
+  "specs": [
+   "openapi/_original/openapi.json"
+  ]
+ },
+ {
+  "slug": "covatic",
+  "specs": [
+   "openapi/_original/covatic-audience-builder-openapi.json",
+   "openapi/_original/covatic-audience-builder-openapi.yml"
+  ]
+ },
+ {
+  "slug": "daily",
+  "specs": [
+   "openapi/_original/daily-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "daily-co",
+  "specs": [
+   "openapi/_original/daily-co-openapi.json"
+  ]
+ },
+ {
+  "slug": "deepdub",
+  "specs": [
+   "openapi/_original/deepdub-api-openapi-original.json",
+   "openapi/_original/deepdub-openapi.json"
+  ]
+ },
+ {
+  "slug": "deepinfra",
+  "specs": [
+   "openapi/_original/deepinfra-openapi.yml"
+  ]
+ },
+ {
+  "slug": "deezer",
+  "specs": [
+   "openapi/_original/deezer-openapi.yml"
+  ]
+ },
+ {
+  "slug": "descript",
+  "specs": [
+   "openapi/_original/descript-openapi.yml"
+  ]
+ },
+ {
+  "slug": "dolby",
+  "specs": [
+   "openapi/_original/dolby-millicast-analytics-openapi-original.json",
+   "openapi/_original/dolby-millicast-analytics-openapi.yml",
+   "openapi/_original/dolby-millicast-api-openapi-original.json",
+   "openapi/_original/dolby-millicast-director-openapi-original.json",
+   "openapi/_original/dolby-millicast-director-openapi.yml",
+   "openapi/_original/dolby-optiview-ad-engine-openapi-original.yaml",
+   "openapi/_original/dolby-optiview-ad-engine-openapi.yml",
+   "openapi/_original/dolby-optiview-ads-openapi-original.json",
+   "openapi/_original/dolby-optiview-ads-openapi.yml",
+   "openapi/_original/dolby-optiview-ads-signaling-v1-openapi-original.json",
+   "openapi/_original/dolby-optiview-ads-signaling-v1-openapi.yml",
+   "openapi/_original/dolby-optiview-live-openapi-original.json",
+   "openapi/_original/dolby-optiview-live-openapi.yml"
+  ]
+ },
+ {
+  "slug": "dolby-io",
+  "specs": [
+   "openapi/_original/dolby-io-realtime-streaming-api-openapi.yml",
+   "openapi/_original/dolby-io-theolive-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "elevenlabs",
+  "specs": [
+   "openapi/_original/elevenlabs-audio-isolation-openapi.yml",
+   "openapi/_original/elevenlabs-conversational-ai-openapi.yml",
+   "openapi/_original/elevenlabs-dubbing-openapi.yml",
+   "openapi/_original/elevenlabs-music-openapi.yml",
+   "openapi/_original/elevenlabs-openapi.json",
+   "openapi/_original/elevenlabs-sound-effects-openapi.yml",
+   "openapi/_original/elevenlabs-speech-to-text-openapi.yml",
+   "openapi/_original/elevenlabs-studio-openapi.yml",
+   "openapi/_original/elevenlabs-text-to-speech-openapi.yml",
+   "openapi/_original/elevenlabs-voice-changer-openapi.yml",
+   "openapi/_original/elevenlabs-voice-cloning-openapi.yml",
+   "openapi/_original/elevenlabs-voices-openapi.yml"
+  ]
+ },
+ {
+  "slug": "envato",
+  "specs": [
+   "openapi/_original/envato-api-docs.json",
+   "openapi/_original/envato-openapi.yml"
+  ]
+ },
+ {
+  "slug": "epidemic-sound",
+  "specs": [
+   "openapi/_original/epidemic-sound-partner-content-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "fish-audio",
+  "specs": [
+   "openapi/_original/fish-audio-openapi.yml"
+  ]
+ },
+ {
+  "slug": "getstream",
+  "specs": [
+   "openapi/_original/getstream-openapi.yml",
+   "openapi/_original/stream-io-product-chat-api-openapi.yml",
+   "openapi/_original/stream-io-product-common-api-openapi.yml",
+   "openapi/_original/stream-io-product-feeds-api-openapi.yml",
+   "openapi/_original/stream-io-product-moderation-api-openapi.yml",
+   "openapi/_original/stream-io-product-video-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-cloud-text-to-speech",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "gradium",
+  "specs": [
+   "openapi/_original/gradium-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "heidi-health",
+  "specs": [
+   "openapi/_original/heidi-health-openapi.yml"
+  ]
+ },
+ {
+  "slug": "kalpa-labs",
+  "specs": [
+   "openapi/_original/kalpa-labs-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "kotoba",
+  "specs": [
+   "openapi/_original/kotoba-asr-realtime-openapi-original.yml",
+   "openapi/_original/kotoba-sts-realtime-openapi-original.yml",
+   "openapi/_original/kotoba-transcription-openapi-original.yml",
+   "openapi/_original/kotoba-tts-realtime-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "kugelaudio",
+  "specs": [
+   "openapi/_original/kugelaudio-openapi.json"
+  ]
+ },
+ {
+  "slug": "lacuna",
+  "specs": [
+   "openapi/_original/lacuna-account-openapi.yml",
+   "openapi/_original/lacuna-music-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "lalal-ai",
+  "specs": [
+   "openapi/_original/lalal-ai-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lastfm",
+  "specs": [
+   "openapi/_original/lastfm-openapi-original.yml",
+   "openapi/_original/lastfm-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lisnr",
+  "specs": [
+   "openapi/_original/lisnr-portal-openapi-derived.json",
+   "openapi/_original/lisnr-tones-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "listennotes",
+  "specs": [
+   "openapi/_original/listennotes-openapi.json",
+   "openapi/_original/listennotes-openapi.yaml",
+   "openapi/_original/listennotes-openapi.yml"
+  ]
+ },
+ {
+  "slug": "listnr",
+  "specs": [
+   "openapi/_original/listnr-openapi.json"
+  ]
+ },
+ {
+  "slug": "magichour",
+  "specs": [
+   "openapi/_original/magichour-api-openapi.yml",
+   "openapi/_original/magichour-openapi.json"
+  ]
+ },
+ {
+  "slug": "mediaruntime",
+  "specs": [
+   "openapi/_original/mediaruntime-api-openapi.yml",
+   "openapi/_original/mediaruntime-openapi.json",
+   "openapi/_original/mediaruntime-openapi_2.json"
+  ]
+ },
+ {
+  "slug": "modulate",
+  "specs": [
+   "openapi/_original/accent-batch-openapi-original.yml",
+   "openapi/_original/ai-music-detection-batch-openapi-original.yml",
+   "openapi/_original/emotion-batch-openapi-original.yml",
+   "openapi/_original/language-detection-batch-openapi-original.yml",
+   "openapi/_original/music-detection-batch-openapi-original.yml",
+   "openapi/_original/pii-phi-redaction-batch-openapi-original.yml",
+   "openapi/_original/stt-batch-english-vfast-openapi-original.yml",
+   "openapi/_original/stt-batch-multilingual-vfast-openapi-original.yml",
+   "openapi/_original/stt-batch-openapi-original.yml",
+   "openapi/_original/synthetic-voice-detection-batch-openapi-original.yml",
+   "openapi/_original/velma-2-batch-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "murf",
+  "specs": [
+   "openapi/_original/murf-openapi.yml"
+  ]
+ },
+ {
+  "slug": "narakeet",
+  "specs": [
+   "openapi/_original/narakeet-openapi.yml"
+  ]
+ },
+ {
+  "slug": "neuphonic",
+  "specs": [
+   "openapi/_original/neuphonic-openapi.yml"
+  ]
+ },
+ {
+  "slug": "novita-ai",
+  "specs": [
+   "openapi/_original/novita-ai-openapi.json"
+  ]
+ },
+ {
+  "slug": "openverse",
+  "specs": [
+   "openapi/_original/openapi.json"
+  ]
+ },
+ {
+  "slug": "podbean",
+  "specs": [
+   "openapi/_original/podbean-openapi.yml"
+  ]
+ },
+ {
+  "slug": "podbean-api",
+  "specs": [
+   "openapi/_original/podbean-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "podcastindex",
+  "specs": [
+   "openapi/_original/podcastindex-openapi.yml"
+  ]
+ },
+ {
+  "slug": "podcastle",
+  "specs": [
+   "openapi/_original/podcastle-openapi.yml"
+  ]
+ },
+ {
+  "slug": "pyannoteai",
+  "specs": [
+   "openapi/_original/pyannoteai-api-openapi.yml",
+   "openapi/_original/pyannoteai-openapi.json"
+  ]
+ },
+ {
+  "slug": "radio-co",
+  "specs": [
+   "openapi/_original/radio-co-openapi.yml"
+  ]
+ },
+ {
+  "slug": "radio-cult",
+  "specs": [
+   "openapi/_original/radio-cult-openapi.yml"
+  ]
+ },
+ {
+  "slug": "radio-mast",
+  "specs": [
+   "openapi/_original/radio-mast-openapi.yml"
+  ]
+ },
+ {
+  "slug": "resemble-ai",
+  "specs": [
+   "openapi/_original/resemble-ai-openapi.yml"
+  ]
+ },
+ {
+  "slug": "riverside",
+  "specs": [
+   "openapi/_original/riverside-business-openapi.yml"
+  ]
+ },
+ {
+  "slug": "shazam",
+  "specs": [
+   "openapi/_original/shazam-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "shutterstock",
+  "specs": [
+   "openapi/_original/shutterstock-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sieve",
+  "specs": [
+   "openapi/_original/sieve-openapi.yml"
+  ]
+ },
+ {
+  "slug": "siliconflow",
+  "specs": [
+   "openapi/_original/siliconflow-openapi.yml"
+  ]
+ },
+ {
+  "slug": "simplecast",
+  "specs": [
+   "openapi/_original/simplecast-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sonde-health",
+  "specs": [
+   "openapi/_original/sonde-health-screening-api-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "songtradr",
+  "specs": [
+   "openapi/_original/songtradr-api-openapi-original.json",
+   "openapi/_original/songtradr-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "soundcloud",
+  "specs": [
+   "openapi/_original/soundcloud-openapi.yml"
+  ]
+ },
+ {
+  "slug": "soundstripe",
+  "specs": [
+   "openapi/_original/soundstripe-openapi.yml"
+  ]
+ },
+ {
+  "slug": "spotify",
+  "specs": [
+   "openapi/_original/spotify-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "spreaker",
+  "specs": [
+   "openapi/_original/spreaker-openapi.yml"
+  ]
+ },
+ {
+  "slug": "stream-io",
+  "specs": [
+   "openapi/_original/stream-io-chat-openapi.yml",
+   "openapi/_original/stream-io-moderation-openapi.yml",
+   "openapi/_original/stream-io-serverside-openapi.yml",
+   "openapi/_original/stream-io-video-openapi.yml"
+  ]
+ },
+ {
+  "slug": "suno",
+  "specs": [
+   "openapi/_original/suno-openapi.yml"
+  ]
+ },
+ {
+  "slug": "taddy-api",
+  "specs": [
+   "openapi/_original/taddy-podcast-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tidal",
+  "specs": [
+   "openapi/_original/tidal-catalog-api-openapi.yml",
+   "openapi/_original/tidal-claims-api-openapi.yml",
+   "openapi/_original/tidal-commerce-api-openapi.yml",
+   "openapi/_original/tidal-playback-api-openapi.yml",
+   "openapi/_original/tidal-recommendations-api-openapi.yml",
+   "openapi/_original/tidal-search-api-openapi.yml",
+   "openapi/_original/tidal-social-api-openapi.yml",
+   "openapi/_original/tidal-user-collections-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "transcriptfetch",
+  "specs": [
+   "openapi/_original/transcriptfetch-api-v1-openapi.json",
+   "openapi/_original/transcriptfetch-api-v2-openapi.json"
+  ]
+ },
+ {
+  "slug": "transistor",
+  "specs": [
+   "openapi/_original/transistor-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tunein",
+  "specs": [
+   "openapi/_original/openapi-air.yml",
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "unrealspeech",
+  "specs": [
+   "openapi/_original/unrealspeech-openapi.yml"
+  ]
+ },
+ {
+  "slug": "videosdk",
+  "specs": [
+   "openapi/_original/videosdk-realtime-communication-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "visioconference",
+  "specs": [
+   "openapi/_original/visioconference-openapi.yml"
+  ]
+ },
+ {
+  "slug": "wanapis",
+  "specs": [
+   "openapi/_original/wanapis-openapi.yml"
+  ]
+ },
+ {
+  "slug": "wellsaid",
+  "specs": [
+   "openapi/_original/wellsaid-openapi.yml"
+  ]
+ },
+ {
+  "slug": "wondercraft",
+  "specs": [
+   "openapi/_original/wondercraft-openapi.yml"
+  ]
+ },
+ {
+  "slug": "zamzar",
+  "specs": [
+   "openapi/_original/zamzar-openapi.yaml"
+  ]
+ }
+]

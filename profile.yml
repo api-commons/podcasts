@@ -1,0 +1,335 @@
+context: podcasts
+name: Podcasts
+generated: '2026-11-11'
+version: 0.1.0-draft.20261111
+status: draft
+cohort:
+  tags:
+  - Podcasts
+  - Podcasting
+  - Podcast Hosting
+  - Podcast
+  - Audio
+  - Spoken Word
+  providers_with_harvested_openapi: 88
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates: {}
+shared_specs: {}
+concepts:
+  show:
+    segments_seen:
+      podcasts: 7
+      shows: 6
+      podcast: 2
+    providers_exposing: 13
+    providers_with_readable_schema: 11
+    operations:
+    - operation: GET collection
+      providers: 11
+      share: 0.846
+      tier: core
+    - operation: GET item
+      providers: 9
+      share: 0.692
+      tier: core
+    - operation: POST collection
+      providers: 5
+      share: 0.385
+      tier: extended
+    - operation: DELETE item
+      providers: 2
+      share: 0.154
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 2
+      share: 0.154
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 1
+      share: 0.077
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.077
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.077
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 9
+      share: 0.818
+      type: string
+      spellings:
+      - id
+    - name: name
+      tier: core
+      providers: 9
+      share: 0.818
+      type: string
+      spellings:
+      - title
+      - name
+    - name: description
+      tier: core
+      providers: 7
+      share: 0.636
+      type: string
+      spellings:
+      - description
+      - summary
+    - name: author
+      tier: core
+      providers: 6
+      share: 0.545
+      type: string
+      spellings:
+      - author
+      - publisher
+    - name: image_url
+      tier: extended
+      providers: 4
+      share: 0.364
+      type: string
+      spellings:
+      - imageUrl
+      - artwork_url
+      - image
+      - thumbnail
+    - name: language
+      tier: extended
+      providers: 4
+      share: 0.364
+      type: string
+      spellings:
+      - language
+    - name: type
+      tier: extended
+      providers: 3
+      share: 0.273
+      type: string
+      spellings:
+      - type
+    - name: website
+      tier: extended
+      providers: 3
+      share: 0.273
+      type: string
+      spellings:
+      - website
+    long_tail_count: 135
+    long_tail_sample:
+    - allow_episode_type
+    - category_name
+    - desc
+    - email
+    - episode_count
+    - explicit
+    - feed_url
+    - href
+    - logo
+    - status
+    - access_level
+    - added_at
+    - agent_settings
+    - apply_text_normalization
+    - aspect_ratio
+    - attributes
+    - audio_length_sec
+    - audio_title
+    - audio_url
+    - available_markets
+    - background_url
+    - callback_url
+    - can_be_downloaded
+    - caption_style
+    - caption_style_template_overrides
+    - captions_enabled
+    - categories
+    - category_id
+    - chapters_enabled
+    - collection
+    - contact_email
+    - content_type
+    - copyright
+    - copyrights
+    - country
+    - cover_image_url
+    - create_date_unix
+    - created_at
+    - created_by_user_id
+    - creation_meta
+  episode:
+    segments_seen:
+      episodes: 11
+    providers_exposing: 11
+    providers_with_readable_schema: 9
+    operations:
+    - operation: GET collection
+      providers: 10
+      share: 0.909
+      tier: core
+    - operation: GET item
+      providers: 9
+      share: 0.818
+      tier: core
+    - operation: POST collection
+      providers: 8
+      share: 0.727
+      tier: core
+    - operation: UPDATE item
+      providers: 4
+      share: 0.364
+      tier: extended
+    - operation: POST item
+      providers: 3
+      share: 0.273
+      tier: extended
+    - operation: DELETE item
+      providers: 2
+      share: 0.182
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 1
+      share: 0.091
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.091
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 9
+      share: 1.0
+      type: string
+      spellings:
+      - id
+      - episodeId
+      - guid
+    - name: description
+      tier: core
+      providers: 8
+      share: 0.889
+      type: string
+      spellings:
+      - description
+      - content
+      - summary
+    - name: name
+      tier: core
+      providers: 8
+      share: 0.889
+      type: string
+      spellings:
+      - title
+      - name
+    - name: duration
+      tier: core
+      providers: 7
+      share: 0.778
+      type: integer
+      spellings:
+      - duration
+      - durationSeconds
+      - audio_length_sec
+      - duration_ms
+    - name: audio_url
+      tier: core
+      providers: 6
+      share: 0.667
+      type: string
+      spellings:
+      - audioUrl
+      - media_url
+      - audio_url
+      - audio
+    - name: show_id
+      tier: core
+      providers: 5
+      share: 0.556
+      type: string
+      spellings:
+      - podcast_id
+      - showId
+      - podcastId
+      - podcast
+    - name: type
+      tier: extended
+      providers: 4
+      share: 0.444
+      type: string
+      spellings:
+      - type
+    - name: episode_number
+      tier: extended
+      providers: 3
+      share: 0.333
+      type: integer
+      spellings:
+      - episode_number
+      - number
+    - name: published_at
+      tier: extended
+      providers: 3
+      share: 0.333
+      type: string
+      spellings:
+      - published_at
+      - publishDate
+    - name: season
+      tier: extended
+      providers: 3
+      share: 0.333
+      type: integer
+      spellings:
+      - season_number
+      - season
+    long_tail_count: 60
+    long_tail_sample:
+    - explicit
+    - href
+    - image_url
+    - logo
+    - permalink_url
+    - player_url
+    - publish_time
+    - status
+    - added_at
+    - apple_episode_type
+    - artist
+    - artwork_file
+    - attributes
+    - audio_file
+    - audio_preview_url
+    - audio_title
+    - available_markets
+    - by_interval
+    - collection
+    - copyrights
+    - downloads
+    - email_user_after_audio_processed
+    - explicit_content
+    - external_urls
+    - file_size
+    - hq
+    - html_description
+    - images
+    - inactive_at
+    - is_externally_hosted
+    - is_playable
+    - language
+    - languages
+    - limit
+    - link
+    - listennotes_edit_url
+    - listennotes_url
+    - magic_mastering
+    - maybe_audio_invalid
+    - media_type

@@ -1,0 +1,45 @@
+provider: autocontent-api
+apis_io: https://apis.io/providers/autocontent-api/
+context: podcasts
+generated: '2026-11-11'
+concepts:
+  show:
+    path_segment:
+    - podcasts
+    - shows
+    properties:
+      id: id
+      name:
+      - name
+      - title
+      description:
+      - description
+      - summary
+      author: author
+      image_url: imageUrl
+      language: language
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/autocontent-api-legacy-content-openapi.json#GET /content/Podcasts
+    - openapi/_original/autocontent-api-legacy-content-openapi.json#GET /podcast/shows
+    - openapi/_original/autocontent-api-legacy-content-openapi.json#GET /public/podcasts
+    - openapi/_original/autocontent-api-legacy-content-openapi.json#GET /public/podcasts/{id}
+    - openapi/_original/autocontent-api-legacy-content-openapi.json#POST /podcast/shows
+  episode:
+    path_segment:
+    - episodes
+    properties:
+      id:
+      - id
+      - episodeId
+      description: description
+      name: title
+      duration: durationSeconds
+      audio_url: audioUrl
+      show_id: podcastId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/autocontent-api-legacy-content-openapi.json#GET /podcast/episodes
+    - openapi/_original/autocontent-api-legacy-content-openapi.json#GET /podcast/shows/{podcastId}/episodes
+    - openapi/_original/autocontent-api-legacy-content-openapi.json#POST /podcast/episodes/{episodeId}
+    - openapi/_original/autocontent-api-legacy-content-openapi.json#POST /podcast/shows/{podcastId}/episodes

@@ -1,0 +1,42 @@
+provider: listennotes
+apis_io: https://apis.io/providers/listennotes/
+context: podcasts
+generated: '2026-11-11'
+concepts:
+  show:
+    path_segment:
+    - podcasts
+    properties:
+      id: id
+      name: title
+      description: description
+      author: publisher
+      image_url:
+      - image
+      - thumbnail
+      language: language
+      type: type
+      website: website
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/listennotes-openapi.json#DELETE /podcasts/{id}
+    - openapi/_original/listennotes-openapi.json#GET /podcasts/{id}
+    - openapi/_original/listennotes-openapi.json#POST /podcasts
+    - openapi/_original/listennotes-openapi.yml#DELETE /podcasts/{id}
+    - openapi/_original/listennotes-openapi.yml#GET /podcasts/{id}
+  episode:
+    path_segment:
+    - episodes
+    properties:
+      id: id
+      description: description
+      name: title
+      duration: audio_length_sec
+      audio_url: audio
+      show_id: podcast
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/listennotes-openapi.json#GET /episodes/{id}
+    - openapi/_original/listennotes-openapi.json#POST /episodes
+    - openapi/_original/listennotes-openapi.yml#GET /episodes/{id}
+    - openapi/_original/listennotes-openapi.yml#POST /episodes

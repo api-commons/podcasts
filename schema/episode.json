@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/podcasts/main/schema/episode.json",
+  "title": "Episode",
+  "description": "The common episode in Podcasts, distilled from 9 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 1.0,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "id",
+        "episodeId",
+        "guid"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.889,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "description",
+        "content",
+        "summary"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.889,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "title",
+        "name"
+      ]
+    },
+    "duration": {
+      "type": "integer",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.778,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "duration",
+        "durationSeconds",
+        "audio_length_sec",
+        "duration_ms"
+      ]
+    },
+    "audio_url": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.667,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "audioUrl",
+        "media_url",
+        "audio_url",
+        "audio"
+      ]
+    },
+    "show_id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.556,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "podcast_id",
+        "showId",
+        "podcastId",
+        "podcast"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.444,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "type"
+      ]
+    },
+    "episode_number": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.333,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "episode_number",
+        "number"
+      ]
+    },
+    "published_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.333,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "published_at",
+        "publishDate"
+      ],
+      "format": "date-time"
+    },
+    "season": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.333,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "season_number",
+        "season"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "podcasts",
+    "concept": "episode",
+    "providers": 9,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}

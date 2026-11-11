@@ -1,0 +1,34 @@
+provider: simplecast
+apis_io: https://apis.io/providers/simplecast/
+context: podcasts
+generated: '2026-11-11'
+concepts:
+  show:
+    path_segment:
+    - podcasts
+    properties:
+      id: id
+      name: title
+      description: description
+      author: author
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/simplecast-openapi.yml#GET /podcasts
+    - openapi/_original/simplecast-openapi.yml#GET /podcasts/{podcast_id}
+  episode:
+    path_segment:
+    - episodes
+    properties:
+      id: id
+      description: description
+      name: title
+      episode_number: number
+      published_at: published_at
+      season: season
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/simplecast-openapi.yml#GET /analytics/embed/episodes
+    - openapi/_original/simplecast-openapi.yml#GET /analytics/episodes
+    - openapi/_original/simplecast-openapi.yml#GET /episodes/{episode_id}
+    - openapi/_original/simplecast-openapi.yml#GET /podcasts/{podcast_id}/episodes
+    - openapi/_original/simplecast-openapi.yml#GET /seasons/{season_id}/episodes

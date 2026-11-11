@@ -1,0 +1,79 @@
+context: podcasts
+generated: '2026-11-11'
+adopters:
+- provider: acast
+  apis_io: https://apis.io/providers/acast/
+  crosswalk: crosswalk/acast.yml
+  concepts:
+  - episode
+  - show
+- provider: autocontent-api
+  apis_io: https://apis.io/providers/autocontent-api/
+  crosswalk: crosswalk/autocontent-api.yml
+  concepts:
+  - episode
+  - show
+- provider: buzzsprout
+  apis_io: https://apis.io/providers/buzzsprout/
+  crosswalk: crosswalk/buzzsprout.yml
+  concepts:
+  - episode
+  - show
+- provider: captivate-fm
+  apis_io: https://apis.io/providers/captivate-fm/
+  crosswalk: crosswalk/captivate-fm.yml
+  concepts:
+  - episode
+  - show
+- provider: elevenlabs
+  apis_io: https://apis.io/providers/elevenlabs/
+  crosswalk: crosswalk/elevenlabs.yml
+  concepts:
+  - show
+- provider: listennotes
+  apis_io: https://apis.io/providers/listennotes/
+  crosswalk: crosswalk/listennotes.yml
+  concepts:
+  - episode
+  - show
+- provider: podbean
+  apis_io: https://apis.io/providers/podbean/
+  crosswalk: crosswalk/podbean.yml
+  concepts:
+  - episode
+  - show
+- provider: podbean-api
+  apis_io: https://apis.io/providers/podbean-api/
+  crosswalk: crosswalk/podbean-api.yml
+  concepts:
+  - episode
+  - show
+- provider: simplecast
+  apis_io: https://apis.io/providers/simplecast/
+  crosswalk: crosswalk/simplecast.yml
+  concepts:
+  - episode
+  - show
+- provider: spotify
+  apis_io: https://apis.io/providers/spotify/
+  crosswalk: crosswalk/spotify.yml
+  concepts:
+  - episode
+  - show
+- provider: spreaker
+  apis_io: https://apis.io/providers/spreaker/
+  crosswalk: crosswalk/spreaker.yml
+  concepts:
+  - episode
+  - show
+- provider: transistor
+  apis_io: https://apis.io/providers/transistor/
+  crosswalk: crosswalk/transistor.yml
+  concepts:
+  - episode
+  - show
+- provider: wondercraft
+  apis_io: https://apis.io/providers/wondercraft/
+  crosswalk: crosswalk/wondercraft.yml
+  concepts:
+  - show

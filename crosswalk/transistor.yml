@@ -1,0 +1,29 @@
+provider: transistor
+apis_io: https://apis.io/providers/transistor/
+context: podcasts
+generated: '2026-11-11'
+concepts:
+  show:
+    path_segment:
+    - shows
+    properties:
+      id: id
+      type: type
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/transistor-openapi.yml#GET /shows
+    - openapi/_original/transistor-openapi.yml#GET /shows/{id}
+    - openapi/_original/transistor-openapi.yml#PATCH /shows/{id}
+  episode:
+    path_segment:
+    - episodes
+    properties:
+      id: id
+      type: type
+    core_coverage: 0.167
+    evidence:
+    - openapi/_original/transistor-openapi.yml#GET /analytics/episodes/{id}
+    - openapi/_original/transistor-openapi.yml#GET /analytics/{id}/episodes
+    - openapi/_original/transistor-openapi.yml#GET /episodes
+    - openapi/_original/transistor-openapi.yml#GET /episodes/{id}
+    - openapi/_original/transistor-openapi.yml#PATCH /episodes/{id}

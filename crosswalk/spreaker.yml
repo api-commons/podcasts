@@ -1,0 +1,27 @@
+provider: spreaker
+apis_io: https://apis.io/providers/spreaker/
+context: podcasts
+generated: '2026-11-11'
+concepts:
+  show:
+    path_segment:
+    - shows
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/spreaker-openapi.yml#DELETE /shows/{show_id}
+    - openapi/_original/spreaker-openapi.yml#GET /shows/{show_id}
+    - openapi/_original/spreaker-openapi.yml#GET /users/{user_id}/shows
+    - openapi/_original/spreaker-openapi.yml#POST /shows
+    - openapi/_original/spreaker-openapi.yml#POST /shows/{show_id}
+  episode:
+    path_segment:
+    - episodes
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/spreaker-openapi.yml#DELETE /episodes/{episode_id}
+    - openapi/_original/spreaker-openapi.yml#GET /episodes/{episode_id}
+    - openapi/_original/spreaker-openapi.yml#GET /shows/{show_id}/episodes
+    - openapi/_original/spreaker-openapi.yml#GET /tags/{tag_name}/episodes
+    - openapi/_original/spreaker-openapi.yml#GET /users/{user_id}/episodes

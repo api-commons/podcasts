@@ -1,0 +1,40 @@
+provider: buzzsprout
+apis_io: https://apis.io/providers/buzzsprout/
+context: podcasts
+generated: '2026-11-11'
+concepts:
+  show:
+    path_segment:
+    - podcasts
+    properties:
+      id: id
+      name: title
+      description: description
+      author: author
+      image_url: artwork_url
+      language: language
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/buzzsprout-openapi.yml#GET /podcasts.json
+  episode:
+    path_segment:
+    - episodes
+    properties:
+      id:
+      - guid
+      - id
+      description:
+      - description
+      - summary
+      name: title
+      duration: duration
+      audio_url: audio_url
+      episode_number: episode_number
+      published_at: published_at
+      season: season_number
+    core_coverage: 0.833
+    evidence:
+    - openapi/_original/buzzsprout-openapi.yml#GET /{podcast_id}/episodes.json
+    - openapi/_original/buzzsprout-openapi.yml#GET /{podcast_id}/episodes/{id}.json
+    - openapi/_original/buzzsprout-openapi.yml#POST /{podcast_id}/episodes.json
+    - openapi/_original/buzzsprout-openapi.yml#PUT /{podcast_id}/episodes/{id}.json

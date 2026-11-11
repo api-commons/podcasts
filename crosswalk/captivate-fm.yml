@@ -1,0 +1,24 @@
+provider: captivate-fm
+apis_io: https://apis.io/providers/captivate-fm/
+context: podcasts
+generated: '2026-11-11'
+concepts:
+  show:
+    path_segment:
+    - shows
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/captivate-fm-openapi.yml#GET /shows/{id}/
+    - openapi/_original/captivate-fm-openapi.yml#GET /users/{id}/shows
+    - openapi/_original/captivate-fm-openapi.yml#PUT /shows/{id}
+  episode:
+    path_segment:
+    - episodes
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/captivate-fm-openapi.yml#GET /episodes/{id}
+    - openapi/_original/captivate-fm-openapi.yml#GET /shows/{id}/episodes
+    - openapi/_original/captivate-fm-openapi.yml#POST /episodes
+    - openapi/_original/captivate-fm-openapi.yml#PUT /episodes/{id}

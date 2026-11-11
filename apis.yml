@@ -1,0 +1,48 @@
+aid: common-podcasts
+name: Podcasts
+type: Common
+description: 'The common Podcasts vocabulary, distilled from the harvested OpenAPI of 88 providers in APIs.io: shared
+  operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names to each provider''s
+  own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Podcasts
+- Podcasting
+- Podcast Hosting
+- Podcast
+- Common Schema
+created: '2026-11-11'
+modified: '2026-11-11'
+url: https://raw.githubusercontent.com/api-commons/podcasts/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-podcasts:podcasts
+  name: Common Podcasts Interface
+  description: The Podcasts interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/podcasts
+  tags:
+  - Podcasts
+  - Podcasting
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/podcasts/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/podcasts/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/podcasts/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: show
+    url: https://raw.githubusercontent.com/api-commons/podcasts/main/schema/show.json
+  - type: JSONSchema
+    name: episode
+    url: https://raw.githubusercontent.com/api-commons/podcasts/main/schema/episode.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/podcasts/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

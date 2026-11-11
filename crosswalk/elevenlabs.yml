@@ -1,0 +1,18 @@
+provider: elevenlabs
+apis_io: https://apis.io/providers/elevenlabs/
+context: podcasts
+generated: '2026-11-11'
+concepts:
+  show:
+    path_segment:
+    - podcasts
+    properties:
+      name:
+      - name
+      - title
+      description: description
+      author: author
+      language: language
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/elevenlabs-openapi.json#POST /v1/studio/podcasts

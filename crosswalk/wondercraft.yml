@@ -1,0 +1,15 @@
+provider: wondercraft
+apis_io: https://apis.io/providers/wondercraft/
+context: podcasts
+generated: '2026-11-11'
+concepts:
+  show:
+    path_segment:
+    - podcast
+    - podcasts
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/wondercraft-openapi.yml#GET /podcast/{job_id}
+    - openapi/_original/wondercraft-openapi.yml#GET /podcasts
+    - openapi/_original/wondercraft-openapi.yml#POST /podcast

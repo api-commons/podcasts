@@ -1,0 +1,1471 @@
+{
+ "cohort_size": 88,
+ "unreadable": [],
+ "concepts": {
+  "show": {
+   "acast": {
+    "segments": [
+     "shows"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "title": "string",
+     "description": "string",
+     "rssFeedUrl": "string",
+     "imageUrl": "string"
+    },
+    "evidence": [
+     "openapi/_original/acast-openapi.yml#GET /shows",
+     "openapi/_original/acast-openapi.yml#GET /shows/{showId}"
+    ]
+   },
+   "autocontent-api": {
+    "segments": [
+     "podcasts",
+     "shows"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "requestTypeId": "integer",
+     "audioTitle": "string",
+     "audioUrl": "string",
+     "responseText": "string",
+     "requestedOn": "string",
+     "succeededOn": "string",
+     "errorOn": "string",
+     "processingOn": "string",
+     "errorMessage": "string",
+     "status": "integer",
+     "shareUrl": "string",
+     "name": "string",
+     "description": "string",
+     "author": "string",
+     "link": "string",
+     "email": "string",
+     "token": "string",
+     "createdOn": "string",
+     "updatedOn": "string",
+     "rssUrl": "string",
+     "success": "boolean",
+     "podcastId": "string",
+     "imageUrl": "string",
+     "language": "string",
+     "categoryId": "integer",
+     "title": "string",
+     "summary": "string",
+     "quizUrl": "string",
+     "infographicUrl": "string",
+     "slideDeckUrl": "string",
+     "videoExplainerUrl": "string",
+     "videoExplainerPosterUrl": "string",
+     "fileSize": "integer",
+     "durationSeconds": "integer",
+     "transcript": "string",
+     "slug": "string"
+    },
+    "evidence": [
+     "openapi/_original/autocontent-api-legacy-content-openapi.json#GET /content/Podcasts",
+     "openapi/_original/autocontent-api-legacy-content-openapi.json#GET /podcast/shows",
+     "openapi/_original/autocontent-api-legacy-content-openapi.json#GET /public/podcasts",
+     "openapi/_original/autocontent-api-legacy-content-openapi.json#GET /public/podcasts/{id}",
+     "openapi/_original/autocontent-api-legacy-content-openapi.json#POST /podcast/shows"
+    ]
+   },
+   "buzzsprout": {
+    "segments": [
+     "podcasts"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "title": "string",
+     "author": "string",
+     "description": "string",
+     "website_address": "string",
+     "contact_email": "string",
+     "keywords": "string",
+     "explicit": "boolean",
+     "main_category": "string",
+     "sub_category": "string",
+     "main_category2": "string",
+     "sub_category2": "string",
+     "main_category3": "string",
+     "sub_category3": "string",
+     "language": "string",
+     "timezone": "string",
+     "artwork_url": "string",
+     "background_url": "string"
+    },
+    "evidence": [
+     "openapi/_original/buzzsprout-openapi.yml#GET /podcasts.json"
+    ]
+   },
+   "captivate-fm": {
+    "segments": [
+     "shows"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/captivate-fm-openapi.yml#GET /shows/{id}/",
+     "openapi/_original/captivate-fm-openapi.yml#GET /users/{id}/shows",
+     "openapi/_original/captivate-fm-openapi.yml#PUT /shows/{id}"
+    ]
+   },
+   "elevenlabs": {
+    "segments": [
+     "podcasts"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "project_id": "string",
+     "name": "string",
+     "create_date_unix": "integer",
+     "created_by_user_id": null,
+     "default_title_voice_ref_id": "string",
+     "default_paragraph_voice_ref_id": "string",
+     "default_model_id": "string",
+     "last_conversion_date_unix": null,
+     "can_be_downloaded": "boolean",
+     "title": null,
+     "author": null,
+     "description": null,
+     "genres": null,
+     "cover_image_url": null,
+     "target_audience": null,
+     "language": null,
+     "content_type": null,
+     "original_publication_date": null,
+     "mature_content": null,
+     "isbn_number": null,
+     "volume_normalization": "boolean",
+     "state": "string",
+     "access_level": "string",
+     "fiction": null,
+     "quality_check_on": "boolean",
+     "quality_check_on_when_bulk_convert": "boolean",
+     "creation_meta": null,
+     "source_type": null,
+     "chapters_enabled": null,
+     "captions_enabled": null,
+     "caption_style": null,
+     "caption_style_template_overrides": null,
+     "public_share_id": null,
+     "aspect_ratio": null,
+     "agent_settings": null,
+     "default_title_voice_id": "string",
+     "default_paragraph_voice_id": "string",
+     "model_id": "string",
+     "mode": null,
+     "source": null,
+     "quality_preset": null,
+     "duration_scale": "string",
+     "intro": null,
+     "outro": null,
+     "instructions_prompt": null,
+     "highlights": null,
+     "callback_url": null,
+     "apply_text_normalization": null
+    },
+    "evidence": [
+     "openapi/_original/elevenlabs-openapi.json#POST /v1/studio/podcasts"
+    ]
+   },
+   "listennotes": {
+    "segments": [
+     "podcasts"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "episodes": "array",
+     "is_claimed": "boolean",
+     "type": "string",
+     "explicit_content": "boolean",
+     "website": "string",
+     "total_episodes": "integer",
+     "audio_length_sec": "integer",
+     "update_frequency_hours": "integer",
+     "earliest_pub_date_ms": "integer",
+     "rss": "string",
+     "latest_episode_id": "string",
+     "latest_pub_date_ms": "integer",
+     "title": "string",
+     "language": "string",
+     "description": "string",
+     "email": "string",
+     "image": "string",
+     "thumbnail": "string",
+     "listennotes_url": "string",
+     "id": "string",
+     "country": "string",
+     "publisher": "string",
+     "itunes_id": "integer",
+     "looking_for": "object",
+     "extra": "object",
+     "genre_ids": "array",
+     "next_episode_pub_date": "integer",
+     "listen_score": "integer",
+     "listen_score_global_rank": "string",
+     "has_guest_interviews": "boolean",
+     "has_sponsors": "boolean",
+     "status": "string",
+     "podcasts": "array",
+     "latest_episodes": "array"
+    },
+    "evidence": [
+     "openapi/_original/listennotes-openapi.json#DELETE /podcasts/{id}",
+     "openapi/_original/listennotes-openapi.json#GET /podcasts/{id}",
+     "openapi/_original/listennotes-openapi.json#POST /podcasts",
+     "openapi/_original/listennotes-openapi.yml#DELETE /podcasts/{id}",
+     "openapi/_original/listennotes-openapi.yml#GET /podcasts/{id}",
+     "openapi/_original/listennotes-openapi.yml#POST /podcasts"
+    ]
+   },
+   "podbean": {
+    "segments": [
+     "podcast"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "title": "string",
+     "desc": "string",
+     "logo": "string",
+     "website": "string",
+     "category_name": "string",
+     "allow_episode_type": "array",
+     "object": "string"
+    },
+    "evidence": [
+     "openapi/_original/podbean-openapi.yml#GET /podcast"
+    ]
+   },
+   "podbean-api": {
+    "segments": [
+     "podcasts"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "title": "string",
+     "desc": "string",
+     "logo": "string",
+     "website": "string",
+     "category_name": "string",
+     "allow_episode_type": "array",
+     "copyright": "string"
+    },
+    "evidence": [
+     "openapi/_original/podbean-api-openapi.yml#GET /v1/podcasts"
+    ]
+   },
+   "simplecast": {
+    "segments": [
+     "podcasts"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "collection": "array",
+     "pages": "object",
+     "id": "string",
+     "title": "string",
+     "description": "string",
+     "author": "string",
+     "href": "string"
+    },
+    "evidence": [
+     "openapi/_original/simplecast-openapi.yml#GET /podcasts",
+     "openapi/_original/simplecast-openapi.yml#GET /podcasts/{podcast_id}"
+    ]
+   },
+   "spotify": {
+    "segments": [
+     "shows"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "GET item",
+     "PUT collection"
+    ],
+    "properties": {
+     "available_markets": "array",
+     "copyrights": "array",
+     "description": "string",
+     "html_description": "string",
+     "explicit": "boolean",
+     "external_urls": null,
+     "href": "string",
+     "id": "string",
+     "images": "array",
+     "is_externally_hosted": "boolean",
+     "languages": "array",
+     "media_type": "string",
+     "name": "string",
+     "publisher": "string",
+     "type": "string",
+     "uri": "string",
+     "total_episodes": "integer",
+     "limit": "integer",
+     "next": "string",
+     "offset": "integer",
+     "previous": "string",
+     "total": "integer",
+     "items": "array",
+     "added_at": "string",
+     "show": null
+    },
+    "evidence": [
+     "openapi/_original/spotify-openapi-original.yml#DELETE /me/shows",
+     "openapi/_original/spotify-openapi-original.yml#GET /me/shows",
+     "openapi/_original/spotify-openapi-original.yml#GET /shows",
+     "openapi/_original/spotify-openapi-original.yml#GET /shows/{id}",
+     "openapi/_original/spotify-openapi-original.yml#PUT /me/shows"
+    ]
+   },
+   "spreaker": {
+    "segments": [
+     "shows"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/spreaker-openapi.yml#DELETE /shows/{show_id}",
+     "openapi/_original/spreaker-openapi.yml#GET /shows/{show_id}",
+     "openapi/_original/spreaker-openapi.yml#GET /users/{user_id}/shows",
+     "openapi/_original/spreaker-openapi.yml#POST /shows",
+     "openapi/_original/spreaker-openapi.yml#POST /shows/{show_id}"
+    ]
+   },
+   "transistor": {
+    "segments": [
+     "shows"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "attributes": "object",
+     "relationships": "object"
+    },
+    "evidence": [
+     "openapi/_original/transistor-openapi.yml#GET /shows",
+     "openapi/_original/transistor-openapi.yml#GET /shows/{id}",
+     "openapi/_original/transistor-openapi.yml#PATCH /shows/{id}"
+    ]
+   },
+   "wondercraft": {
+    "segments": [
+     "podcast",
+     "podcasts"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "job_id": "string",
+     "prompt": "string",
+     "voice_ids": "array",
+     "music_spec": "object",
+     "finished": "boolean",
+     "script": "string",
+     "url": "string",
+     "error": "boolean",
+     "error_details": "string"
+    },
+    "evidence": [
+     "openapi/_original/wondercraft-openapi.yml#GET /podcast/{job_id}",
+     "openapi/_original/wondercraft-openapi.yml#GET /podcasts",
+     "openapi/_original/wondercraft-openapi.yml#POST /podcast"
+    ]
+   }
+  },
+  "episode": {
+   "acast": {
+    "segments": [
+     "episodes"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "showId": "string",
+     "title": "string",
+     "description": "string",
+     "audioUrl": "string",
+     "publishDate": "string",
+     "durationSeconds": "integer"
+    },
+    "evidence": [
+     "openapi/_original/acast-openapi.yml#DELETE /shows/{showId}/episodes/{episodeId}",
+     "openapi/_original/acast-openapi.yml#GET /shows/{showId}/episodes",
+     "openapi/_original/acast-openapi.yml#GET /shows/{showId}/episodes/{episodeId}",
+     "openapi/_original/acast-openapi.yml#PATCH /shows/{showId}/episodes/{episodeId}",
+     "openapi/_original/acast-openapi.yml#POST /shows/{showId}/episodes"
+    ]
+   },
+   "autocontent-api": {
+    "segments": [
+     "episodes"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "id": "integer",
+     "podcastId": "string",
+     "requestId": "string",
+     "title": "string",
+     "description": "string",
+     "audioTitle": "string",
+     "audioUrl": "string",
+     "requestedOn": "string",
+     "succeededOn": "string",
+     "scheduledOn": "string",
+     "fileSize": "integer",
+     "durationSeconds": "integer",
+     "podcastShowIds": "array",
+     "success": "boolean",
+     "episodeId": "integer",
+     "message": "string"
+    },
+    "evidence": [
+     "openapi/_original/autocontent-api-legacy-content-openapi.json#GET /podcast/episodes",
+     "openapi/_original/autocontent-api-legacy-content-openapi.json#GET /podcast/shows/{podcastId}/episodes",
+     "openapi/_original/autocontent-api-legacy-content-openapi.json#POST /podcast/episodes/{episodeId}",
+     "openapi/_original/autocontent-api-legacy-content-openapi.json#POST /podcast/shows/{podcastId}/episodes"
+    ]
+   },
+   "blubrry-api-restful-api-for-podcast-publishing-statistics": {
+    "segments": [
+     "episodes",
+     "episode"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "episode_id": "string",
+     "episode_label": "string",
+     "episode_filename": "string",
+     "episode_date": "string",
+     "duration_in_seconds": "string",
+     "total": "string",
+     "full_downloads": "string",
+     "partial_25": "integer",
+     "partial_50": "integer",
+     "partial_75": "integer",
+     "partial_99": "integer"
+    },
+    "evidence": [
+     "openapi/_original/blubrry-api-restful-api-for-podcast-publishing-statistics-openapi.yml#GET /episode/{keyword}/",
+     "openapi/_original/blubrry-api-restful-api-for-podcast-publishing-statistics-openapi.yml#GET /stats/{keyword}/episodes/",
+     "openapi/_original/blubrry-api-restful-api-for-podcast-publishing-statistics-podcaster-openapi.yaml#GET /stats/{keyword}/episodes/"
+    ]
+   },
+   "buzzsprout": {
+    "segments": [
+     "episodes"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "title": "string",
+     "description": "string",
+     "summary": "string",
+     "artist": "string",
+     "tags": "string",
+     "published_at": "string",
+     "duration": "integer",
+     "guid": "string",
+     "inactive_at": "string",
+     "episode_number": "integer",
+     "season_number": "integer",
+     "explicit": "boolean",
+     "private": "boolean",
+     "hq": "boolean",
+     "magic_mastering": "boolean",
+     "email_user_after_audio_processed": "boolean",
+     "audio_url": "string",
+     "audio_file": "string",
+     "artwork_url": "string",
+     "artwork_file": "string",
+     "id": "integer",
+     "total_plays": "integer"
+    },
+    "evidence": [
+     "openapi/_original/buzzsprout-openapi.yml#GET /{podcast_id}/episodes.json",
+     "openapi/_original/buzzsprout-openapi.yml#GET /{podcast_id}/episodes/{id}.json",
+     "openapi/_original/buzzsprout-openapi.yml#POST /{podcast_id}/episodes.json",
+     "openapi/_original/buzzsprout-openapi.yml#PUT /{podcast_id}/episodes/{id}.json"
+    ]
+   },
+   "captivate-fm": {
+    "segments": [
+     "episodes"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/captivate-fm-openapi.yml#GET /episodes/{id}",
+     "openapi/_original/captivate-fm-openapi.yml#GET /shows/{id}/episodes",
+     "openapi/_original/captivate-fm-openapi.yml#POST /episodes",
+     "openapi/_original/captivate-fm-openapi.yml#PUT /episodes/{id}"
+    ]
+   },
+   "listennotes": {
+    "segments": [
+     "episodes"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "maybe_audio_invalid": "boolean",
+     "pub_date_ms": "integer",
+     "audio": "string",
+     "listennotes_edit_url": "string",
+     "image": "string",
+     "thumbnail": "string",
+     "description": "string",
+     "title": "string",
+     "explicit_content": "boolean",
+     "listennotes_url": "string",
+     "audio_length_sec": "integer",
+     "id": "string",
+     "podcast": "object",
+     "link": "string",
+     "transcript": "string"
+    },
+    "evidence": [
+     "openapi/_original/listennotes-openapi.json#GET /episodes/{id}",
+     "openapi/_original/listennotes-openapi.json#POST /episodes",
+     "openapi/_original/listennotes-openapi.yml#GET /episodes/{id}",
+     "openapi/_original/listennotes-openapi.yml#POST /episodes"
+    ]
+   },
+   "podbean": {
+    "segments": [
+     "episodes"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "id": "string",
+     "podcast_id": "string",
+     "title": "string",
+     "content": "string",
+     "logo": "string",
+     "media_url": "string",
+     "player_url": "string",
+     "permalink_url": "string",
+     "publish_time": "integer",
+     "duration": "integer",
+     "status": "string",
+     "type": "string",
+     "object": "string"
+    },
+    "evidence": [
+     "openapi/_original/podbean-openapi.yml#GET /episodes",
+     "openapi/_original/podbean-openapi.yml#GET /episodes/{id}",
+     "openapi/_original/podbean-openapi.yml#POST /episodes",
+     "openapi/_original/podbean-openapi.yml#POST /episodes/{id}"
+    ]
+   },
+   "podbean-api": {
+    "segments": [
+     "episodes"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "podcast_id": "string",
+     "title": "string",
+     "content": "string",
+     "logo": "string",
+     "media_url": "string",
+     "player_url": "string",
+     "permalink_url": "string",
+     "publish_time": "integer",
+     "duration": "integer",
+     "status": "string",
+     "type": "string",
+     "season_number": "integer",
+     "episode_number": "integer",
+     "apple_episode_type": "string"
+    },
+    "evidence": [
+     "openapi/_original/podbean-api-openapi.yml#GET /v1/episodes"
+    ]
+   },
+   "podcastindex": {
+    "segments": [
+     "episodes"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "title": "string",
+     "link": "string",
+     "description": "string",
+     "guid": "string",
+     "datePublished": "integer",
+     "datePublishedPretty": "string",
+     "dateCrawled": "integer",
+     "enclosureUrl": "string",
+     "enclosureType": "string",
+     "enclosureLength": "integer",
+     "explicit": "integer",
+     "episode": "integer",
+     "episodeType": "string",
+     "season": "integer",
+     "image": "string",
+     "feedItunesId": "integer",
+     "feedImage": "string",
+     "feedId": "integer",
+     "feedTitle": "string",
+     "feedLanguage": "string"
+    },
+    "evidence": [
+     "openapi/_original/podcastindex-openapi.yml#GET /recent/episodes"
+    ]
+   },
+   "simplecast": {
+    "segments": [
+     "episodes"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "collection": "array",
+     "pages": "object",
+     "id": "string",
+     "title": "string",
+     "description": "string",
+     "number": "integer",
+     "season": "object",
+     "published_at": "string",
+     "href": "string",
+     "downloads": "object",
+     "by_interval": "array"
+    },
+    "evidence": [
+     "openapi/_original/simplecast-openapi.yml#GET /analytics/embed/episodes",
+     "openapi/_original/simplecast-openapi.yml#GET /analytics/episodes",
+     "openapi/_original/simplecast-openapi.yml#GET /episodes/{episode_id}",
+     "openapi/_original/simplecast-openapi.yml#GET /podcasts/{podcast_id}/episodes",
+     "openapi/_original/simplecast-openapi.yml#GET /seasons/{season_id}/episodes"
+    ]
+   },
+   "spotify": {
+    "segments": [
+     "episodes"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "GET item",
+     "PUT collection"
+    ],
+    "properties": {
+     "href": "string",
+     "limit": "integer",
+     "next": "string",
+     "offset": "integer",
+     "previous": "string",
+     "total": "integer",
+     "audio_preview_url": "string",
+     "description": "string",
+     "html_description": "string",
+     "duration_ms": "integer",
+     "explicit": "boolean",
+     "external_urls": null,
+     "id": "string",
+     "images": "array",
+     "is_externally_hosted": "boolean",
+     "is_playable": "boolean",
+     "language": "string",
+     "languages": "array",
+     "name": "string",
+     "release_date": "string",
+     "release_date_precision": "string",
+     "resume_point": null,
+     "type": "string",
+     "uri": "string",
+     "restrictions": null,
+     "available_markets": "array",
+     "copyrights": "array",
+     "media_type": "string",
+     "publisher": "string",
+     "total_episodes": "integer",
+     "added_at": "string",
+     "episode": null,
+     "ids": "array"
+    },
+    "evidence": [
+     "openapi/_original/spotify-openapi-original.yml#DELETE /me/episodes",
+     "openapi/_original/spotify-openapi-original.yml#GET /episodes",
+     "openapi/_original/spotify-openapi-original.yml#GET /episodes/{id}",
+     "openapi/_original/spotify-openapi-original.yml#GET /me/episodes",
+     "openapi/_original/spotify-openapi-original.yml#GET /shows/{id}/episodes",
+     "openapi/_original/spotify-openapi-original.yml#PUT /me/episodes"
+    ]
+   },
+   "spreaker": {
+    "segments": [
+     "episodes"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/spreaker-openapi.yml#DELETE /episodes/{episode_id}",
+     "openapi/_original/spreaker-openapi.yml#GET /episodes/{episode_id}",
+     "openapi/_original/spreaker-openapi.yml#GET /shows/{show_id}/episodes",
+     "openapi/_original/spreaker-openapi.yml#GET /tags/{tag_name}/episodes",
+     "openapi/_original/spreaker-openapi.yml#GET /users/{user_id}/episodes",
+     "openapi/_original/spreaker-openapi.yml#POST /episodes/{episode_id}",
+     "openapi/_original/spreaker-openapi.yml#POST /shows/{show_id}/episodes"
+    ]
+   },
+   "transistor": {
+    "segments": [
+     "episodes"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "attributes": "object",
+     "relationships": "object"
+    },
+    "evidence": [
+     "openapi/_original/transistor-openapi.yml#GET /analytics/episodes/{id}",
+     "openapi/_original/transistor-openapi.yml#GET /analytics/{id}/episodes",
+     "openapi/_original/transistor-openapi.yml#GET /episodes",
+     "openapi/_original/transistor-openapi.yml#GET /episodes/{id}",
+     "openapi/_original/transistor-openapi.yml#PATCH /episodes/{id}",
+     "openapi/_original/transistor-openapi.yml#POST /episodes"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "acast",
+    "acrcloud",
+    "apple-music",
+    "artlist",
+    "assemblyai",
+    "audd",
+    "audiomack",
+    "audius",
+    "auphonic",
+    "autocontent-api",
+    "bandcamp",
+    "beatoven",
+    "blubrry-api-restful-api-for-podcast-publishing-statistics",
+    "brandtrack",
+    "buzzsprout",
+    "captivate-fm",
+    "coconut",
+    "cometapi",
+    "convertapi",
+    "covatic",
+    "daily",
+    "daily-co",
+    "deepdub",
+    "deepinfra",
+    "deezer",
+    "descript",
+    "dolby",
+    "dolby-io",
+    "elevenlabs",
+    "envato",
+    "epidemic-sound",
+    "fish-audio",
+    "getstream",
+    "google-cloud-text-to-speech",
+    "gradium",
+    "heidi-health",
+    "kalpa-labs",
+    "kugelaudio",
+    "lacuna",
+    "lalal-ai",
+    "lisnr",
+    "listennotes",
+    "listnr",
+    "magichour",
+    "mediaruntime",
+    "murf",
+    "narakeet",
+    "neuphonic",
+    "novita-ai",
+    "openverse",
+    "podbean",
+    "podbean-api",
+    "podcastindex",
+    "podcastle",
+    "pyannoteai",
+    "radio-co",
+    "radio-cult",
+    "radio-mast",
+    "resemble-ai",
+    "riverside",
+    "shazam",
+    "shutterstock",
+    "sieve",
+    "siliconflow",
+    "simplecast",
+    "sonde-health",
+    "songtradr",
+    "soundcloud",
+    "soundstripe",
+    "spotify",
+    "spreaker",
+    "stream-io",
+    "suno",
+    "tidal",
+    "transcriptfetch",
+    "transistor",
+    "unrealspeech",
+    "videosdk",
+    "visioconference",
+    "wanapis",
+    "wellsaid",
+    "wondercraft",
+    "zamzar"
+   ],
+   "kebab-case": [
+    "acast",
+    "acrcloud",
+    "apple-music",
+    "assemblyai",
+    "audiomack",
+    "audius",
+    "autocontent-api",
+    "blubrry-api-restful-api-for-podcast-publishing-statistics",
+    "captivate-fm",
+    "convertapi",
+    "covatic",
+    "daily",
+    "daily-co",
+    "deepdub",
+    "dolby",
+    "dolby-io",
+    "elevenlabs",
+    "envato",
+    "epidemic-sound",
+    "fish-audio",
+    "getstream",
+    "heidi-health",
+    "kugelaudio",
+    "lisnr",
+    "magichour",
+    "mediaruntime",
+    "modulate",
+    "murf",
+    "narakeet",
+    "podcastindex",
+    "radio-cult",
+    "radio-mast",
+    "resemble-ai",
+    "sonde-health",
+    "songtradr",
+    "spotify",
+    "spreaker",
+    "stream-io",
+    "suno",
+    "wellsaid",
+    "wondercraft"
+   ],
+   "snake_case": [
+    "audiomack",
+    "audius",
+    "auphonic",
+    "bandcamp",
+    "blubrry-api-restful-api-for-podcast-publishing-statistics",
+    "brandtrack",
+    "covatic",
+    "deepdub",
+    "descript",
+    "dolby",
+    "dolby-io",
+    "elevenlabs",
+    "envato",
+    "getstream",
+    "kotoba",
+    "lalal-ai",
+    "listennotes",
+    "openverse",
+    "podcastindex",
+    "podcastle",
+    "resemble-ai",
+    "shutterstock",
+    "simplecast",
+    "soundstripe",
+    "stream-io",
+    "transistor",
+    "visioconference"
+   ],
+   "other": [
+    "artlist",
+    "bandcamp",
+    "blubrry-api-restful-api-for-podcast-publishing-statistics",
+    "envato",
+    "google-cloud-text-to-speech",
+    "heidi-health",
+    "kugelaudio",
+    "lastfm",
+    "podcastindex",
+    "shazam",
+    "tunein"
+   ],
+   "camelCase": [
+    "audd",
+    "daily",
+    "daily-co",
+    "dolby",
+    "podbean",
+    "podbean-api",
+    "podcastindex",
+    "songtradr",
+    "tidal",
+    "unrealspeech"
+   ],
+   "PascalCase": [
+    "autocontent-api"
+   ]
+  },
+  "property": {
+   "lower": [
+    "acast",
+    "autocontent-api",
+    "blubrry-api-restful-api-for-podcast-publishing-statistics",
+    "buzzsprout",
+    "elevenlabs",
+    "listennotes",
+    "podbean",
+    "podbean-api",
+    "podcastindex",
+    "simplecast",
+    "spotify",
+    "transistor",
+    "wondercraft"
+   ],
+   "snake_case": [
+    "blubrry-api-restful-api-for-podcast-publishing-statistics",
+    "buzzsprout",
+    "elevenlabs",
+    "listennotes",
+    "podbean",
+    "podbean-api",
+    "simplecast",
+    "spotify",
+    "wondercraft"
+   ],
+   "camelCase": [
+    "acast",
+    "autocontent-api",
+    "podcastindex"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "acrcloud",
+    "apple-music",
+    "artlist",
+    "audiomack",
+    "audius",
+    "auphonic",
+    "autocontent-api",
+    "blubrry-api-restful-api-for-podcast-publishing-statistics",
+    "brandtrack",
+    "buzzsprout",
+    "captivate-fm",
+    "coconut",
+    "covatic",
+    "daily",
+    "daily-co",
+    "deepdub",
+    "deepinfra",
+    "deezer",
+    "dolby",
+    "dolby-io",
+    "elevenlabs",
+    "epidemic-sound",
+    "fish-audio",
+    "getstream",
+    "gradium",
+    "lacuna",
+    "lisnr",
+    "listennotes",
+    "magichour",
+    "mediaruntime",
+    "narakeet",
+    "openverse",
+    "podbean",
+    "pyannoteai",
+    "resemble-ai",
+    "shazam",
+    "shutterstock",
+    "siliconflow",
+    "songtradr",
+    "soundcloud",
+    "spotify",
+    "stream-io",
+    "tidal",
+    "transistor",
+    "wanapis",
+    "zamzar"
+   ],
+   "snake_case": [
+    "acrcloud",
+    "assemblyai",
+    "audiomack",
+    "audius",
+    "auphonic",
+    "beatoven",
+    "blubrry-api-restful-api-for-podcast-publishing-statistics",
+    "buzzsprout",
+    "covatic",
+    "daily",
+    "daily-co",
+    "deepdub",
+    "deezer",
+    "descript",
+    "elevenlabs",
+    "fish-audio",
+    "getstream",
+    "gradium",
+    "heidi-health",
+    "kalpa-labs",
+    "kotoba",
+    "kugelaudio",
+    "lisnr",
+    "listennotes",
+    "mediaruntime",
+    "murf",
+    "neuphonic",
+    "resemble-ai",
+    "riverside",
+    "shazam",
+    "shutterstock",
+    "sieve",
+    "simplecast",
+    "soundstripe",
+    "spotify",
+    "spreaker",
+    "stream-io",
+    "wanapis",
+    "wondercraft"
+   ],
+   "camelCase": [
+    "acast",
+    "artlist",
+    "audiomack",
+    "audius",
+    "autocontent-api",
+    "captivate-fm",
+    "coconut",
+    "convertapi",
+    "covatic",
+    "daily",
+    "daily-co",
+    "descript",
+    "dolby",
+    "dolby-io",
+    "epidemic-sound",
+    "listnr",
+    "pyannoteai",
+    "radio-co",
+    "radio-cult",
+    "songtradr",
+    "soundcloud",
+    "transcriptfetch",
+    "videosdk",
+    "visioconference",
+    "zamzar"
+   ],
+   "other": [
+    "blubrry-api-restful-api-for-podcast-publishing-statistics"
+   ],
+   "kebab-case": [
+    "wellsaid"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "acrcloud",
+    "apple-music",
+    "artlist",
+    "assemblyai",
+    "audd",
+    "audiomack",
+    "audius",
+    "auphonic",
+    "autocontent-api",
+    "blubrry-api-restful-api-for-podcast-publishing-statistics",
+    "brandtrack",
+    "captivate-fm",
+    "convertapi",
+    "covatic",
+    "daily",
+    "daily-co",
+    "deepdub",
+    "deezer",
+    "descript",
+    "dolby",
+    "dolby-io",
+    "elevenlabs",
+    "envato",
+    "epidemic-sound",
+    "fish-audio",
+    "getstream",
+    "gradium",
+    "heidi-health",
+    "kugelaudio",
+    "lastfm",
+    "lisnr",
+    "listennotes",
+    "listnr",
+    "mediaruntime",
+    "murf",
+    "narakeet",
+    "neuphonic",
+    "openverse",
+    "podbean",
+    "podbean-api",
+    "podcastindex",
+    "pyannoteai",
+    "resemble-ai",
+    "riverside",
+    "shazam",
+    "shutterstock",
+    "sieve",
+    "simplecast",
+    "sonde-health",
+    "songtradr",
+    "soundcloud",
+    "spotify",
+    "spreaker",
+    "stream-io",
+    "tidal",
+    "transistor",
+    "tunein",
+    "videosdk",
+    "wellsaid",
+    "zamzar"
+   ],
+   "snake_case": [
+    "acrcloud",
+    "assemblyai",
+    "audd",
+    "audiomack",
+    "audius",
+    "auphonic",
+    "autocontent-api",
+    "brandtrack",
+    "covatic",
+    "daily",
+    "daily-co",
+    "deepdub",
+    "descript",
+    "dolby",
+    "elevenlabs",
+    "envato",
+    "fish-audio",
+    "getstream",
+    "gradium",
+    "heidi-health",
+    "kugelaudio",
+    "lastfm",
+    "lisnr",
+    "listennotes",
+    "mediaruntime",
+    "neuphonic",
+    "openverse",
+    "podbean",
+    "podbean-api",
+    "podcastindex",
+    "resemble-ai",
+    "riverside",
+    "shutterstock",
+    "soundcloud",
+    "spotify",
+    "stream-io",
+    "transistor"
+   ],
+   "camelCase": [
+    "artlist",
+    "audius",
+    "autocontent-api",
+    "blubrry-api-restful-api-for-podcast-publishing-statistics",
+    "captivate-fm",
+    "convertapi",
+    "covatic",
+    "daily",
+    "daily-co",
+    "dolby",
+    "dolby-io",
+    "epidemic-sound",
+    "google-cloud-text-to-speech",
+    "listnr",
+    "podcastindex",
+    "riverside",
+    "shazam",
+    "sonde-health",
+    "songtradr",
+    "suno",
+    "tidal",
+    "tunein",
+    "videosdk"
+   ],
+   "other": [
+    "openverse",
+    "podcastindex",
+    "shazam",
+    "soundstripe",
+    "tidal",
+    "transistor"
+   ],
+   "kebab-case": [
+    "blubrry-api-restful-api-for-podcast-publishing-statistics",
+    "narakeet",
+    "podcastindex"
+   ],
+   "PascalCase": [
+    "songtradr",
+    "unrealspeech"
+   ]
+  },
+  "pagination_param": {
+   "limit": [
+    "apple-music",
+    "assemblyai",
+    "audiomack",
+    "audius",
+    "auphonic",
+    "autocontent-api",
+    "blubrry-api-restful-api-for-podcast-publishing-statistics",
+    "daily",
+    "daily-co",
+    "deepdub",
+    "deezer",
+    "descript",
+    "dolby",
+    "dolby-io",
+    "elevenlabs",
+    "epidemic-sound",
+    "getstream",
+    "gradium",
+    "kugelaudio",
+    "lastfm",
+    "lisnr",
+    "mediaruntime",
+    "murf",
+    "podbean",
+    "podbean-api",
+    "pyannoteai",
+    "shazam",
+    "shutterstock",
+    "sieve",
+    "simplecast",
+    "spotify",
+    "stream-io",
+    "zamzar"
+   ],
+   "offset": [
+    "apple-music",
+    "audius",
+    "auphonic",
+    "blubrry-api-restful-api-for-podcast-publishing-statistics",
+    "captivate-fm",
+    "daily",
+    "daily-co",
+    "elevenlabs",
+    "epidemic-sound",
+    "getstream",
+    "gradium",
+    "kugelaudio",
+    "listennotes",
+    "podbean",
+    "podbean-api",
+    "shazam",
+    "sieve",
+    "simplecast",
+    "spotify",
+    "stream-io"
+   ],
+   "page": [
+    "acrcloud",
+    "artlist",
+    "audiomack",
+    "autocontent-api",
+    "brandtrack",
+    "covatic",
+    "dolby",
+    "dolby-io",
+    "elevenlabs",
+    "envato",
+    "epidemic-sound",
+    "lastfm",
+    "listennotes",
+    "openverse",
+    "resemble-ai",
+    "riverside",
+    "shutterstock",
+    "songtradr",
+    "videosdk"
+   ],
+   "page_size": [
+    "autocontent-api",
+    "dolby",
+    "elevenlabs",
+    "envato",
+    "epidemic-sound",
+    "fish-audio",
+    "heidi-health",
+    "listennotes",
+    "openverse",
+    "resemble-ai",
+    "shazam",
+    "soundstripe"
+   ],
+   "cursor": [
+    "autocontent-api",
+    "descript",
+    "dolby",
+    "dolby-io",
+    "elevenlabs",
+    "mediaruntime",
+    "pyannoteai",
+    "shutterstock"
+   ],
+   "start": [
+    "blubrry-api-restful-api-for-podcast-publishing-statistics",
+    "captivate-fm",
+    "dolby",
+    "dolby-io",
+    "epidemic-sound",
+    "podbean"
+   ],
+   "per_page": [
+    "acrcloud",
+    "brandtrack",
+    "resemble-ai",
+    "shutterstock",
+    "videosdk"
+   ],
+   "size": [
+    "covatic",
+    "envato",
+    "openverse",
+    "shutterstock",
+    "songtradr"
+   ],
+   "starting_after": [
+    "daily",
+    "daily-co",
+    "lisnr"
+   ],
+   "next": [
+    "getstream",
+    "murf",
+    "stream-io"
+   ],
+   "before": [
+    "podcastindex",
+    "spotify",
+    "zamzar"
+   ],
+   "skip": [
+    "dolby",
+    "gradium"
+   ],
+   "after": [
+    "spotify",
+    "zamzar"
+   ]
+  }
+ }
+}

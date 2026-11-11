@@ -1,0 +1,31 @@
+provider: podbean-api
+apis_io: https://apis.io/providers/podbean-api/
+context: podcasts
+generated: '2026-11-11'
+concepts:
+  show:
+    path_segment:
+    - podcasts
+    properties:
+      id: id
+      name: title
+      website: website
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/podbean-api-openapi.yml#GET /v1/podcasts
+  episode:
+    path_segment:
+    - episodes
+    properties:
+      id: id
+      description: content
+      name: title
+      duration: duration
+      audio_url: media_url
+      show_id: podcast_id
+      type: type
+      episode_number: episode_number
+      season: season_number
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/podbean-api-openapi.yml#GET /v1/episodes
