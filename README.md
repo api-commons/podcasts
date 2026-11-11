@@ -26,6 +26,17 @@ extended tier and the long tail of every concept are in [profile.yml](profile.ym
 - An episode agrees on title, description, duration, the audio URL and the show it belongs to -- the RSS enclosure model every podcast API inherits, because every podcast is an RSS feed first.
 - A show agrees on title, description and author.
 
+## Measured against the standard
+
+The census reads what providers publish. Where the domain has a standard, the standard's own
+definition is read as one more voice: how much of the measured core it defines, and what it
+defines that no provider in the cohort publishes. Crosswalks are in [standards/](standards).
+
+| Standard | Concept | Core defined by the standard | Fields only the standard has |
+| --- | --- | ---: | ---: |
+| [schemaorg-30.1](https://github.com/schemaorg/schemaorg/tree/v30.1) | `episode` | 67% | 124 |
+| [schemaorg-30.1](https://github.com/schemaorg/schemaorg/tree/v30.1) | `show` | 75% | 118 |
+
 ## Artifacts
 
 - [openapi.yml](openapi.yml) -- OpenAPI 3.1 of the shared operations. No one serves it; it
